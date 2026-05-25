@@ -1,13 +1,29 @@
-function somaTudo(numeros) {
-    var total = 0
+let i = 0;
 
-    for(var num of numeros) {
-        total = total + num
-    } 
+/* while */
+// while(i <= 10) {
+//     console.log(i)
+//     i++
+// }
 
-    return total
+/* dowhile */
+// do {
+//     console.log(i)
+//     i++
+// } while (i <= 10);
+
+/* for */
+// for(let i = 0; i < 10; i++) {
+// console.log('Item: ', i)
+// }
+
+let contador = 5;
+
+while(contador < 0) {
+    if(contador === 3) {
+        console.log(contador--);
+        continue;
+    }
+    console.log(contador);
+    contador--;
 }
-
-var arrayNumeros = [ 2, 3 ] // 5
-var resultado = somaTudo(arrayNumeros)
-console.log(resultado)
